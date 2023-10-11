@@ -1,0 +1,262 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #494e54;
+}
+.centered {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.rounded {
+    border-radius: 10px;
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2);
+}
+header {
+    background-color: hwb(266 59% 9% / 0);
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    display: block;
+}
+
+.full-screen {
+    
+    height: calc(100vh - 68px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url('backgroundImage.jpg'); /* Set your image path here */
+    background-size: cover;
+    background-color: #414141;
+    color: white; 
+}
+
+.full-screen h1 {
+    font-size: 3em;
+    margin: 0;
+}
+.aboutMe{
+    padding: 1px;
+    background-color: #c495d2;
+    color: #fff;
+}
+.aboutMe .centered{
+    text-align: center;
+}
+#projectList {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 auto;
+    max-width: 1200px;
+    justify-content: space-between;
+}
+.projects{
+    padding: 1px;
+    background-color: #ffffff;
+    color: #000000;
+}
+.projects .centered{
+    text-align: center;
+}
+.project {
+    position: relative;
+    width: calc(50% - 15px); /* Calculate width for 2 projects per row with gap */
+    height: 300px;
+    margin-bottom: 20px;
+    margin-right: 15px; /* Set the right margin to control the gap */
+    color: #d7d7d7;
+    padding-left: 0px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Add a text shadow */
+  
+}
+
+.project h2 {
+    padding-left: 15px; /* Add padding to indent the project header */
+    position: absolute;
+    opacity: 1;
+    transition: opacity 0.3s;
+    -webkit-text-stroke: 0.8px #252525; /* Add a text outline */
+    text-shadow: #252525;
+}
+.project-name{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+}
+.project:hover .project-info {
+    opacity: 1;
+}
+.project .project-info {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    transform: translateY(-50%);
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+.project-image {
+    background-size: cover;
+    background-position: center;
+    width: 100%; /* Set the width to 100% */
+    height: 100%; /* Set the height to 100% */
+    transition: filter 0.5s; /* Adjust the transition duration */
+}
+
+
+.project:hover .project-image {
+    filter: brightness(0.5) blur(3px);
+}
+.project .popup-contents {
+    display: none;
+}
+.popup-contents {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    position: relative;
+}
+.popup-content {
+    overflow-y: auto; /* Add vertical scrollbar when content overflows */
+    max-height: 80vh; /* Limit the maximum height of the popup content */
+}
+
+.popup-button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: auto; /* Pushes the container to the bottom */
+}
+.popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+}
+.popup-img {
+    max-width: 80%; /* Limit the image width to the size of the popup */
+    max-height: 70vh; /* Limit the image height to 70% of the viewport height */
+    margin: 0 auto 10px; /* Center the image and add some space below */
+    display: block; /* Make sure the image is displayed as a block element */
+}
+
+
+.popup-description {
+    font-size: 14px; /* Adjust the font size as needed */
+    color: #333; /* Adjust the text color as needed */
+    text-align: center;
+}
+
+.popup-description ul {
+    list-style-type:disc;
+    padding-left: 0;
+    margin-left: 1em;
+}
+
+.popup-description li {
+    position: center;
+    padding-left: 1em;
+    text-align: left; /* Adjust text alignment */
+}
+
+.popup-content button {
+    background-color: transparent;
+    color: #252525; /* Change to the desired text color */
+    border: none;
+    padding: 8px 20px;
+    border-radius: 20px;
+    transition: background-color 0.3s, color 0.3s;
+    cursor: pointer;
+    font-size: 16px;
+    position: absolute;
+    bottom: 10px; /* Adjust this value for vertical spacing */
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.popup-content button:hover {
+    background-color: #252525; /* Change to the desired hover background color */
+    color: #ffffff; /* Change to the desired hover text color */
+}
+/* Styles for navigation bar */
+nav {
+    background-color: #19191a;
+    color: #0f06c1;
+    text-align: center;
+    padding: 1rem 0;
+}
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+nav li {
+    display: inline;
+    margin: 0 10px;
+}
+.nav-button {
+    text-decoration: none;
+    color: #fff;
+    padding: 8px 20px;
+    border-radius: 20px;
+    transition: background-color 0.3s, color 0.3s;
+}
+.nav-button:hover {
+    background-color: #fff;
+    color: hwb(0 0% 100%);
+}
+
+.download-button {
+    text-decoration: none;
+    color: #fff;
+    border: 2px solid #fff;
+    padding: 8px 20px;
+    border-radius: 20px;
+    display: block;
+    transition: background-color 0.3s, color 0.3s;
+}
+.download-button:hover {
+    background-color: #fff;
+    color: hwb(0 0% 100%);
+}
+
+.contact{
+    padding: 35px;
+    background-color: #c495d2;
+    color: #fff;
+}
+.contact .centered{
+    text-align: center;
+}
+.footer{
+    height: calc(20vh - 68px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url('backgroundImage.jpg'); /* Set your image path here */
+    background-size: cover;
+    background-color: #414141;
+    color: white; 
+}
+
+.footer ul{
+    list-style: none;
+}

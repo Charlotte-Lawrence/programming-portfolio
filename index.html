@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Charlotte Lawrence</title>
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+    <nav class="centered rounded">
+        <ul>
+            <li><a href="#home" class="nav-button">Home</a></li>
+            <li><a href="#about" class="nav-button">About Me</a></li>
+            <li><a href="#projects" class="nav-button">Projects</a></li>
+            <li><a href="#contact" class="nav-button">Contact</a></li>
+        </ul>
+    </nav>
+
+    <header class="full-screen" id="home">
+        <h1>Charlotte Lawrence</h1>
+        <p>3rd year Undergraduate Computer Science student at Lancaster University</p>
+    </header>
+
+    <section class="aboutMe" id="about">
+        <h1 class="centered">About Me</h1>
+
+        <div class="centered">
+            <p>I am a passionate and dedicated computer science student in my third year at Lancaster University.
+            <br><br><br>
+            I have a strong interest in software development, machine learning/AI, problem-solving and data analytics. Over the years, I have developed proficiency in programming languages such as Java and Python, and I enjoy working on projects that challenge me to think critically and creatively.
+            <br><br><br>
+            During my academic journey, I have had the opportunity to work on various projects including java applications, web applications and other specific-use scripts. Most notably, I have worked on a larger-scale project during my 2nd year group project module where we created a microsoft paint style application in Java.
+            <br><br><br>
+            When I'm not programming, I enjoy attending societies at university such as the Lancaster University Motorsport Society where we often gather for Formula 1 viewings or karting events.
+            <br><br><br>
+            I'm excited about the potential that technology holds to solve real-world problems, and I am looking forward to leveraging my skills to make a positive impact in the field of computer science.</p>
+       
+        </div>
+
+        <a href="assets/cv/CV.pdf" target="_blank" download class="download-button centered">Download CV</a>
+    </section>
+
+    <section class="projects" id="projects">
+        <h2 class="centered">Projects</h2>
+        <div class="centered">
+            <p>
+                This is a list of projects I have worked on, you can click on each one to view more information about each specific project.
+            </p>
+        </div>
+        <section id ="projectList">
+            <div class="project rounded" onmouseover="showShortDesc(this)" onclick="showPopup(1)">
+                <div class="project-name">
+                    <h2>Solar System</h2>
+                    <div class="project-image" style="background-image: url('assets/images/solar.jpg');"></div>
+                </div>
+                <div class="project-info">
+                    <p class="short-description">This project is an animated model of the solar system...</p>
+                </div>
+                <div class="popup-contents">
+                    <div class="popup-image">
+                        <img src="assets/images/solar.jpg" alt="Project Image" class="popup-img">
+                    </div>
+                    <p class="popup-description">
+                        In this project, I created a 2D animated model of the solar system using Java. 
+                        <br><br> I heavily used object-oriented principles for extensible and efficient code with each item inheriting from a custom SolarObject type, such as Sun and Planet and then Moon also inherits from Planet creating a hierarchy / inheritance tree.
+                        <br><br> The planets orbit the sun and there are moons which orbit specific planets. Although this project was a piece of cousework for my Advanced Programming module, I really enjoyed creating it and I was able to have enough time to add some extra features of my own.
+                        <br><br> Some features I added was being able to alter the speed of the model, or pausing it altogether, using keyboard keybinds. I also added an asteroid belt which consisted of randomly generated and sized asteroids, and also some stars for the background which was also randomly generated upon each load of the program.
+                        <br><br> This was created in Java but at some point I hope to extend the project further and potentially use Unity to remake it in 3D with correct planet textures.
+                        <br><br>
+                    </p>
+                </div>
+            </div>
+            
+            <div class="project rounded" onmouseover="showShortDesc(this)" onclick="showPopup(2)">
+                <div class="project-name">
+                    <h2>Prison Escape Game</h2>
+                    <div class="project-image" style="background-image: url('assets/images/prison.jpg');"></div>
+                </div>
+                <div class="project-info">
+                    <p class="short-description">This project was a prison escape game for my A Level Computer Science project...</p>
+                </div>
+                <div class="popup-contents">
+                    <div class="popup-image">
+                        <img src="assets/images/prison.jpg" alt="Project Image" class="popup-img">
+                    </div>
+                    <div class="popup-description">
+                        <p>
+                            This project was for my Computer Science A Level Project.
+                            <br><br> It was written in C# and I created all of the graphics myself using photoshop. We were able pick our own idea completely so I picked a prison escape game inspired by The Escapists.
+                            <br><br> Some key features of the game include:
+                        </p>
+                        <ul>
+                            <li>Animated player movements</li>
+                            <li>AI for the guards - using Dijkstra's Shortest Path algorithm which uses a computer generated adjacency matrix (converting the map bounding boxes into nodes and edges, so when a new map is added the guards will automatically work for each map), and they also use a finite state machine to easily swap the guard's state (attack, roam, chase) </li>
+                            <li>Camera viewport - follows the player and keeps them in the center of the frame until they go near the edges of the map</li>
+                            <li>Usable items - money and keys</li>
+                            <li>Strength and health systems</li>
+                            <li>Attacking or bribing the guards</li>
+                            <li>Escaping or dying</li>
+                        </ul>
+                        <p>
+                            I really enjoyed creating this project and working with my group. Because of all of our hard work and dedication, our project was graded an A, and I achieved a first-class grade in that module.
+                            <br><br>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project rounded" onmouseover="showShortDesc(this)" onclick="showPopup(3)">
+                <div class="project-name">
+                    <h2>Graphics Editor</h2>
+                    <div class="project-image" style="background-image: url('assets/images/pixelEditor.jpg');"></div>
+                </div>
+                <div class="project-info">
+                    <p class="short-description">This project was created for my university Computer Science Group Project module and is our take on a graphics editor such as Microsoft Paint...</p>
+                </div>
+                <div class="popup-contents">
+                    <div class="popup-image">
+                        <img src="assets/images/pixelEditor.jpg" alt="Project Image" class="popup-img">
+                    </div>
+                    <div class="popup-description">
+                        <p>
+                            This project was for my Computer Science Group Project module and was coded in Java and we used GitLab to streamline the code collaboration and deployment.
+                            <br><br> It is our take on a pixel-based graphics editor similar to Microsoft Paint. Some of the key features that I specifically worked on include:
+                        </p>
+                        <ul>
+                            <li> Fill tool - using a flood fill algorithm with breadth first search 
+                            <li> Layering functionality - similar to one in Adobe Photoshop and , other layer functions such as add, delete and renaming.
+                            <li> Select tool functionality - to move pixels dynamically
+                            <li> Export - the user can have the final image in a PNG file 
+                            <li> File save and load - with our own program file extension so the user can continue editing their image. </li>
+                        </ul>
+                        <p>
+                        I really enjoyed creating this project and working with my group and because of all of our hard work and dedication, our project was graded an A and I achieved a first class in that module.
+                        <br><br>
+                        </p>
+                       
+                    </div>
+                </div>
+            </div>
+
+            <div class="project rounded" onmouseover="showShortDesc(this)" onclick="showPopup(4)">
+                <div class="project-name">
+                    <h2>Networking Applications</h2>
+                    <div class="project-image" style="background-image: url('assets/images/networking.jpg');"></div>
+                </div>
+                <div class="project-info">
+                    <p class="short-description">This project was a coursework element for my Computer Networks module and is written in Python...</p>
+                </div>
+                <div class="popup-contents">
+                    <div class="popup-image">
+                        <img src="assets/images/networking.jpg" alt="Project Image" class="popup-img">
+                    </div>
+                    <p class="popup-description">
+                        This project was a coursework element for my Computer Networks module and is written in Python.
+                        <br><br> The goal of this project is to create or replicate certain commonly-used networking tools using pythons Socket library.
+                        <br><br> I was able to implement a ping function to calculate the delay when pinging a certain host. I also created traceroute and paris traceroute functionality to try to accurately get the path that a packet will go through across networks. I implemented paris traceroute specifically for accuracy when dealing with networks that have load balancers and it should remove most of the 'false links' that can sometimes be created with traditional traceroute.
+                        <br><br> In this project I also implemented a web server and proxy functions. The proxy function specifically handles HTTP get requests and also has caching so that when the client requests the same page it is obtained from the cache just like a typical web proxy does.
+                        <br><br>
+                    </p>
+                </div>
+            </div>
+
+            <div class="project rounded" onmouseover="showShortDesc(this)" onclick="showPopup(5)">
+                
+                <div class="project-name">
+                    <h2>Minesweeper Remake</h2>
+                    <div class="project-image" style="background-image: url('assets/images/bombsweep.jpg');"></div>
+                </div>
+                <div class="project-info">
+                    <p class="short-description">This project was my version of the popular computer game MineSweeper called BombSweeper...</p>
+                </div>
+                <div class="popup-contents">
+                    <div class="popup-image">
+                        <img src="assets/images/bombsweep.jpg" alt="Project Image" class="popup-img">
+                    </div>
+                    <p class="popup-description">
+                        This project was my version of the popular computer game MineSweeper called BombSweeper.
+                        <br><br> This project consists of the same functionality as the original game, so the user can discover areas by clicking on the box, and either a number will appear or a bomb. If a bomb is clicked the game ends just like the original. The project was created in Java using the Swing library.
+                        <br><br>
+                    </p>
+                </div>
+            </div>
+
+            <div class="project rounded" onmouseover="showShortDesc(this)" onclick="showPopup(6)">
+                <div class="project-name">
+                    <h2>Scheduler</h2>
+                    <div class="project-image" style="background-image: url('assets/images/scheduler.jpg');"></div>
+                </div>
+                <div class="project-info">
+                    <p class="short-description">This project is a scheduling application for music festivals...</p>
+                </div>
+                <div class="popup-contents">
+                    <div class="popup-image">
+                        <img src="assets/images/scheduler.jpg" alt="Project Image" class="popup-img">
+                    </div>
+                    <p class="popup-description">
+                        This project is a scheduling application for music festivals.
+                        <br><br> In this project, I was tasked to create a scheduler for a music festival. 
+                        <br><br> The scheduler allows for the user to input an act name with their priority, and duration on stage. The user can then set a target time for the highest priority act to be at and they can also set a gap between acts so that they can move equipment etc.
+                        <br><br> The program also allows for a file upload for festivals with a large amount of acts and also a save to file option for ease of use. The text generated section also allows copying so the user can do that instead if they wish.
+                        <br><br>
+                    </p>
+                </div>
+            </div>
+            
+            <!-- Add more project divs as needed -->
+        </section>
+        
+        <section class="contact" id="contact">
+            <h2 class="centered">Contact</h2>
+
+            <div class="centered">
+                <p>
+                    You can contact me either by sending me an email or by connecting with me on linkedin.
+                    <br><br>
+                    <b>Email:  </b>chyneekee01@gmail.com
+                    <br><br>
+                    <b>LinkedIn:  </b><a href="https://www.linkedin.com/in/charlotte-c-lawrence/" target="_blank">https://www.linkedin.com/in/charlotte-c-lawrence/</a>
+                </p>
+            </div>
+        </section>
+
+        <section class="footer">
+            <ul class="copyright centered" >
+                <li>&copy; 2023 Charlotte Lawrence</li>
+            </ul>
+        </section>
+
+        <div class="popup" id="popup">
+            <div class="popup-content" id="popup-content">
+                <div class="popup-button-container">
+                    <button onclick="closePopup()">Close</button>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    
+    <script src="assets/scripts/script.js"></script>
+</body>
+</html>
