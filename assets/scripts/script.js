@@ -1,10 +1,3 @@
-function sendMessage() {
-    const userMessage = document.getElementById('userMessage').value;
-    const messagesDiv = document.getElementById('messages');
-    messagesDiv.innerHTML += `<div>You: ${userMessage}</div>`;
-}
-
-
 function showShortDesc(project) {
     const shortDescription = project.querySelector('.short-description');
     shortDescription.style.opacity = '1';
