@@ -45,8 +45,8 @@
         <div class="centered">
             <p>
                 This is a list of projects I have worked on, you can click on each one to view more information about each specific project.
-                <br>
-                Some of the projects have GitHub Links to code, expand each one to see more information and you will find the link at the bottom.
+                <br><br>
+                Some of the projects have GitHub Links to code, expand each one to see more information and you will find the link at the top, below the image.
             </p>
         </div>
         <section id ="projectList">
@@ -64,13 +64,13 @@
                     </div>
                     <div class="popup-description">
                         <p>
+                            <p class="github-link"><a href="https://github.com/Charlotte-Lawrence/SolarSystem" target="_blank"> GitHub Link</a></p>
+                            <br><br>
                             In this project, I created a 2D animated model of the solar system using Java. 
                             <br><br> I heavily used object-oriented principles for extensible and efficient code with each item inheriting from a custom SolarObject type, such as Sun and Planet and then Moon also inherits from Planet creating a hierarchy / inheritance tree.
                             <br><br> The planets orbit the sun and there are moons which orbit specific planets. Although this project was a piece of cousework for my Advanced Programming module, I really enjoyed creating it and I was able to have enough time to add some extra features of my own.
                             <br><br> Some features I added was being able to alter the speed of the model, or pausing it altogether, using keyboard keybinds. I also added an asteroid belt which consisted of randomly generated and sized asteroids, and also some stars for the background which was also randomly generated upon each load of the program.
                             <br><br> This was created in Java but at some point I hope to extend the project further and potentially use Unity to remake it in 3D with correct planet textures.
-                            <br><br>
-                            <p class="github-link"><a href="https://github.com/Charlotte-Lawrence/SolarSystem" target="_blank"> GitHub Link</a></p>
                             <br><br>
                         </p>
                     </div>
@@ -90,11 +90,11 @@
                     </div>
                     <div class="popup-description">
                         <p>
+                            <p class="github-link"><a href="https://github.com/Charlotte-Lawrence/FeatureMatching" target="_blank"> GitHub Link</a></p>
+                            <br><br>
                             This project was a project in MATLAB to be able to match features in images to other images so objects can be identified.
                             <br><br>
                             It involves using the SIFT technique so that changing the scale, intensity or rotation of the image does not effect the feature matching.
-                            <br><br>
-                            <p class="github-link"><a href="https://github.com/Charlotte-Lawrence/FeatureMatching" target="_blank"> GitHub Link</a></p>
                             <br><br>
                         </p>
                     </div>
@@ -168,7 +168,7 @@
                     </div>
                 </div>
             </div>
-
+            
             <div class="project rounded" onmouseover="showShortDesc(this)" onclick="showPopup(5)">
                 <div class="project-name">
                     <h2>Networking Applications</h2>
@@ -181,13 +181,17 @@
                     <div class="popup-image">
                         <img src="assets/images/networking.jpg" alt="Project Image" class="popup-img">
                     </div>
-                    <p class="popup-description">
-                        This project was a coursework element for my Computer Networks module and is written in Python.
-                        <br><br> The goal of this project is to create or replicate certain commonly-used networking tools using pythons Socket library.
-                        <br><br> I was able to implement a ping function to calculate the delay when pinging a certain host. I also created traceroute and paris traceroute functionality to try to accurately get the path that a packet will go through across networks. I implemented paris traceroute specifically for accuracy when dealing with networks that have load balancers and it should remove most of the 'false links' that can sometimes be created with traditional traceroute.
-                        <br><br> In this project I also implemented a web server and proxy functions. The proxy function specifically handles HTTP get requests and also has caching so that when the client requests the same page it is obtained from the cache just like a typical web proxy does.
-                        <br><br>
-                    </p>
+                    <div class="popup-description">
+                        <p>
+                            <p class="github-link"><a href="https://github.com/Charlotte-Lawrence/Networking" target="_blank"> GitHub Link</a></p>
+                            <br><br>
+                            This project was a coursework element for my Computer Networks module and is written in Python.
+                            <br><br> The goal of this project is to create or replicate certain commonly-used networking tools using pythons Socket library.
+                            <br><br> I was able to implement a ping function to calculate the delay when pinging a certain host. I also created traceroute and paris traceroute functionality to try to accurately get the path that a packet will go through across networks. I implemented paris traceroute specifically for accuracy when dealing with networks that have load balancers and it should remove most of the 'false links' that can sometimes be created with traditional traceroute.
+                            <br><br> In this project I also implemented a web server and proxy functions. The proxy function specifically handles HTTP get requests and also has caching so that when the client requests the same page it is obtained from the cache just like a typical web proxy does.
+                            <br><br>
+                        </p>
+                    </div>
                 </div>
             </div>
 
